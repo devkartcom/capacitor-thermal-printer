@@ -1,0 +1,28 @@
+NOTICE
+
+The MIT License in LICENSE covers the plugin's own source code: the TypeScript in src/,
+the Swift in ios/Plugin/*.swift and the Java in android/src/. It does NOT cover the
+vendor printer SDK bundled with it, which is redistributed as received from the upstream
+project (https://github.com/Malik12tree/capacitor-thermal-printer):
+
+  ios/Plugin/SDK/libRTPrinterSDK.a
+  ios/Plugin/SDK/RTPrinterSDK.xcframework/
+  ios/Plugin/SDK/include/
+      Rongta printer SDK for iOS. Its headers read "Copyright © 2017-2022 Rongta.
+      All rights reserved." A few headers carry other authors' notices (Andrew Huang,
+      bluedrum, kong, Printer); those notices are kept as found.
+
+  android/libs/printer_library.jar
+      Rongta printer SDK for Android (package com.rt.printerlibrary). It also contains
+      the FastBle library (package com.clj.fastble) and the Android serial-port API
+      (package android_serialport_api).
+
+  android/libs/*/libserial_port.so
+      Native half of the Android serial-port API used by printer_library.jar.
+
+These files belong to their respective owners, and their use is subject to those owners'
+terms. Contact Rongta for the SDK's licence terms.
+
+Modifications by Devkart Technologies LLP (2026): Swift Package Manager support (the
+RTPrinterSDK.xcframework wrapper and Package.swift) and Android Bluetooth discovery
+fixes. The vendor binaries themselves are unchanged.
