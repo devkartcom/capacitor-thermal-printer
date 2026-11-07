@@ -4,7 +4,7 @@
     width="64"
     valign="middle"
   />
-  <code>capacitor-thermal-printer</code>
+  <code>@devkartcom/capacitor-thermal-printer</code>
   <br>
   <img src="https://img.shields.io/badge/bluetooth-6796f9?&logo=bluetooth&logoColor=white">
   <img src="https://img.shields.io/badge/Capacitor-119EFF?logo=Capacitor&logoColor=white">
@@ -16,6 +16,13 @@
 
 </h1>
 
+> **This is Devkart's maintained fork** of
+> [Malik12tree/capacitor-thermal-printer](https://github.com/Malik12tree/capacitor-thermal-printer),
+> published as `@devkartcom/capacitor-thermal-printer`. It adds Swift Package Manager support
+> (Capacitor 8) and Android Bluetooth discovery fixes. It is installed from a git tag, not from
+> npm: the `capacitor-thermal-printer` package on npm is the upstream one. The bundled Rongta
+> SDK is not covered by the MIT licence; see [NOTICE](./NOTICE).
+
 High-speed, reliable bluetooth ESC thermal printer and encoder Capacitor plugin. Both on Android and iOS!
 
 - [x] Using the official RTPrinter SDK by [Rongta Technology](https://www.rongtatech.com/) <3
@@ -25,7 +32,7 @@ High-speed, reliable bluetooth ESC thermal printer and encoder Capacitor plugin.
 ## Install
 
 ```bash
-npm install capacitor-thermal-printer --save
+npm i github:devkartcom/capacitor-thermal-printer#v0.3.7
 npx cap sync
 ```
 
@@ -45,7 +52,7 @@ Open your iOS project in Xcode, then:
 2. Select your main target (usually also named "App").
 3. Navigate to "Build Phases" tab.
 4. Under "Copy Bundle Resources", click the "+" button and choose "Add Other..."
-5. Navigate to the `node_modules/capacitor-thermal-printer/ios/Plugin/Resources/ble_serial.plist` file and select it
+5. Navigate to the `node_modules/@devkartcom/capacitor-thermal-printer/ios/Plugin/Resources/ble_serial.plist` file and select it
 
 And voilà! You're all set!
 
@@ -56,7 +63,7 @@ Make sure to check the Ionic Angular example in the [example](./example) folder.
 ### 1. Import the plugin
 
 ```ts
-import { CapacitorThermalPrinter } from 'capacitor-thermal-printer';
+import { CapacitorThermalPrinter } from '@devkartcom/capacitor-thermal-printer';
 ```
 
 ### 2. Connect to printer
@@ -124,8 +131,21 @@ Check out the [Docs](./docs/README.md)!
 
 ## Issues
 
-If you encounter any issues with this plugin, please report them at [Issues](https://github.com/Malik12tree/capacitor-thermal-printer/issues)
+If you encounter any issues with this plugin, please report them at [Issues](https://github.com/devkartcom/capacitor-thermal-printer/issues). Problems that also occur upstream belong at [Malik12tree/capacitor-thermal-printer](https://github.com/Malik12tree/capacitor-thermal-printer/issues)
 
 ## Contributing
 
 We're open to, and grateful for, any contributions made! Make sure to check [Contribution Guidelines](./CONTRIBUTING.md)
+
+## About Devkart
+
+Built and maintained by [Devkart Technologies LLP](https://devkart.com): custom software,
+SaaS platforms and MVPs. We run this plugin in production in our own two products:
+
+- **[Supaorder](https://www.supaorder.com)**: white-label online ordering for restaurants.
+  Orders go straight into Clover, Square or Toast, and restaurants pay a flat monthly fee
+  instead of a commission.
+- **[SuperApp](https://www.superapphq.com)**: a white-label multi-vertical marketplace
+  platform for food delivery, retail and supermarkets.
+
+Questions or issues: open a GitHub issue, or write to contact@devkart.com.

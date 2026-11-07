@@ -1,6 +1,6 @@
 {
-  "name": "capacitor-thermal-printer",
-  "version": "0.3.6",
+  "name": "@devkartcom/capacitor-thermal-printer",
+  "version": "0.3.7",
   "description": "High-speed, reliable bluetooth ESC thermal printer and encoder Capacitor plugin.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -21,10 +21,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Malik12tree/capacitor-thermal-printer.git"
+    "url": "git+https://github.com/devkartcom/capacitor-thermal-printer.git"
   },
   "bugs": {
-    "url": "https://github.com/Malik12tree/capacitor-thermal-printer/issues"
+    "url": "https://github.com/devkartcom/capacitor-thermal-printer/issues"
   },
   "keywords": [
     "capacitor",
@@ -88,5 +88,6 @@
     "android": {
       "src": "android"
     }
-  }
+  },
+  "homepage": "https://github.com/devkartcom/capacitor-thermal-printer#readme"
 }
